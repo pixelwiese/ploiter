@@ -1,0 +1,149 @@
+//out: buttons.css
+
+/*
+Ploiter CSS Framework
+ploiter.ch
+Karl Hofmann
+ZLI Basislehrjahr
+*/
+
+@import "variables.less";
+@import "typografie.less";
+
+/*Buttons*/
+
+/*----------------------
+STANDARD BUTTON
+----------------------*/
+button, .btn {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    color: #000;
+    font-family: @font;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    letter-spacing: 0.125em;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    .btn-filled;
+}
+
+.btn-filled, .btn-filled-default {
+    color: #FFF;
+    background-color: #000;
+}
+
+.btn-filled:hover, btn-filled-default:hover {
+    color: #000;
+    background-color: #FFF;
+}
+
+
+.btn-small {
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    font-size: 80%;
+}
+
+/*----------------------
+INFO BUTTON
+----------------------*/
+.btn-info {
+    border-color: @info;
+    color: @info;
+}
+
+.btn-info:hover{
+    .btn-filled-info;
+}
+
+.btn-filled-info {
+    .btn-info;
+    color: #FFF;
+    background-color: @info;
+}
+
+.btn-filled-info:hover {
+    .btn-info;
+    background-color: #FFF;
+}
+
+/*----------------------
+SUCCESS BUTTON
+----------------------*/
+.btn-success {
+    border-color: @success;
+    color: @success;
+}
+
+.btn-success:hover {
+    .btn-filled-success;
+}
+
+.btn-filled-success {
+    .btn-success;
+    color: #FFF;
+    background-color: @success;
+}
+
+.btn-filled-success:hover {
+    .btn-success;
+    background-color: #FFF;
+}
+
+/*----------------------
+WARNING BUTTON
+----------------------*/
+.btn-warning {
+    border-color: @warning;
+    color: @warning;
+}
+
+.btn-warning:hover {
+    .btn-filled-warning;
+}
+
+.btn-filled-warning {
+    .btn-warning;
+    color: #FFF;
+    background-color: @warning;
+}
+
+.btn-filled-warning:hover {
+    .btn-warning;
+    background-color: #FFF;
+}
+/*----------------------
+DANGER BUTTON
+----------------------*/
+.btn-danger {
+    border-color: @danger;
+    color: @danger;
+}
+
+.btn-danger:hover {
+    .btn-filled-danger;
+    color: #FFF;
+    background-color: @danger;
+}
+
+.btn-filled-danger {
+    .btn-danger;
+    color: #FFF;
+    background-color: @danger;
+}
+
+.btn-filled-danger:hover {
+    .btn-danger;
+    background-color: #FFF;
+}
