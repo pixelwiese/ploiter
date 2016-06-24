@@ -1,0 +1,86 @@
+/*Benachrichigungen*/
+
+.notification {
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    border: 3px solid @default;
+    line-height: 2.2;
+}
+
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    background-color: @default;
+    float: left;
+    line-height: 1.7;
+    font-family: ploiticons;
+    font-size: 20pt;
+    color: #FFF;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.notification-close {
+    width: 25px;
+    height: 40px;
+    background-color: @default;
+    float: right;
+    line-height: 1.7;
+    font-family: ploiticons;
+    font-size: 20pt;
+    color: #FFF;
+    text-align: center;
+}
+
+.notification-text {
+    margin-left: 50px;
+}
+
+/*COLORS*/
+
+.notification-info {
+    border: 3px solid @info;
+    color: @info;
+    & .notification-icon {
+        background-color: @info;
+    }
+    & .notification-close {
+        background-color: @info;
+    }
+}
+
+.notification-success {
+    border: 3px solid @success;
+    color: @success;
+    & .notification-icon {
+        background-color: @success;
+    }
+    & .notification-close {
+        background-color: @success;
+    }
+}
+
+
+.notification-warning {
+    border: 3px solid @warning;
+    color: @warning;
+    & .notification-icon {
+        background-color: @warning;
+    }
+    & .notification-close {
+        background-color: @warning;
+    }
+}
+
+.notification-danger {
+    border: 3px solid @danger;
+    color: @danger;
+    & .notification-icon {
+        background-color: @danger;
+    }
+    & .notification-close {
+        background-color: @danger;
+    }
+}
+
