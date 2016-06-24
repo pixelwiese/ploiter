@@ -1,15 +1,3 @@
-//out: nav.css
-
-/*
-Ploiter CSS Framework
-ploiter.ch
-Karl Hofmann
-ZLI Basislehrjahr
-*/
-
-@import "variables.less";
-@import "typografie.less";
-
 /*navigation*/
 
 .nav {
@@ -29,13 +17,13 @@ ZLI Basislehrjahr
 .nav-item {
     float: left;
     margin-top: 15px;
-    margin-right: 30px;
-    margin-left: 40px;
+    margin-right: 70px;
     margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 700;
     &:last-child{
         float: none;
+        margin-left: 70px;
     }
 }
 
@@ -43,4 +31,53 @@ ZLI Basislehrjahr
 
 .nav-brand {
     margin-right: 100px;
+}
+
+.nav-fixed {
+    position: fixed;
+}
+/*COLORS*/
+/*------------
+INFO
+------------*/
+
+.nav-list-info {
+    border-bottom: 3px solid @info;
+}
+
+.nav-item-info {
+    color: @info;
+}
+
+/*------------
+SUCCESS
+------------*/
+.nav-list-success {
+    border-bottom: 3px solid @success;
+}
+
+.nav-item-success {
+    color: @success;
+}
+
+/*------------
+WARNING
+------------*/
+.nav-list-warning {
+    border-bottom: 3px solid @warning;
+}
+
+.nav-item-warning {
+    color: @warning;
+}
+
+/*------------
+DANGER
+------------*/
+.nav-list-danger {
+    border-bottom: 3px solid @danger;
+}
+
+.nav-item-danger {
+    color: @danger;
 }
