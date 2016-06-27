@@ -1,10 +1,16 @@
 /*navigation*/
 
+
 .nav {
     width: 100vw;
 }
 
 .nav-list {
+    list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+    
     border-bottom: 3px solid #000;
     width: 90%;
     margin-left: 5%;
@@ -15,6 +21,9 @@
 
 
 .nav-item {
+    display:inline-block;
+	margin-right: 1px;
+    
     float: left;
     margin-top: 15px;
     margin-right: 70px;
@@ -23,7 +32,9 @@
     font-weight: 700;
     &:last-child{
         float: none;
-        margin-left: 70px;
+    }
+    & a {
+        color: #000;
     }
 }
 
@@ -36,6 +47,49 @@
 .nav-fixed {
     position: fixed;
 }
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ .nav{
+    display: block;
+}
+
+@media screen and (max-width: 760px){
+	.nav-list {
+		position: static;
+	}
+	/*Create vertical spacing*/
+	.nav-item {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.nav-item {
+		width: 100%;
+	}
+    
+    .show-menu {
+		display:block;
+	}
+}
+    
+
+
 /*COLORS*/
 /*------------
 INFO
@@ -47,6 +101,9 @@ INFO
 
 .nav-item-info {
     color: @info;
+    & a {
+        color: @info;
+    }
 }
 
 /*------------
@@ -58,6 +115,9 @@ SUCCESS
 
 .nav-item-success {
     color: @success;
+    & a {
+        color: @success;
+    }
 }
 
 /*------------
@@ -69,6 +129,9 @@ WARNING
 
 .nav-item-warning {
     color: @warning;
+    & a {
+        color: @warning;
+    }
 }
 
 /*------------
@@ -80,4 +143,7 @@ DANGER
 
 .nav-item-danger {
     color: @danger;
-}
+    & a {
+        color: @danger;
+    }
+} 

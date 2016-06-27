@@ -2,16 +2,20 @@
 
 .notification {
     width: 90%;
+    min-height: 45px;
     margin-left: 5%;
-    height: 40px;
     border: 3px solid @default;
+    border-left: 40px solid @default;
+    border-right: 25px solid @default;
     line-height: 2.2;
+    & a, p, span, strong {
+        margin-top: 0;
+    }
 }
 
 .notification-icon {
     width: 40px;
-    height: 40px;
-    background-color: @default;
+    margin-left: -40px;
     float: left;
     line-height: 1.7;
     font-family: ploiticons;
@@ -23,10 +27,9 @@
 
 .notification-close {
     width: 25px;
-    height: 40px;
-    background-color: @default;
+    margin-right: -24px; 
     float: right;
-    line-height: 1.7;
+    line-height: 1.2;
     font-family: ploiticons;
     font-size: 20pt;
     color: #FFF;
@@ -34,53 +37,40 @@
 }
 
 .notification-text {
-    margin-left: 50px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*COLORS*/
 
 .notification-info {
     border: 3px solid @info;
+    border-left: 40px solid @info;
+    border-right: 25px solid @info;
     color: @info;
-    & .notification-icon {
-        background-color: @info;
-    }
-    & .notification-close {
-        background-color: @info;
-    }
+    
 }
 
 .notification-success {
     border: 3px solid @success;
     color: @success;
-    & .notification-icon {
-        background-color: @success;
-    }
-    & .notification-close {
-        background-color: @success;
-    }
+    border-left: 40px solid @success;
+    border-right: 25px solid @success;
 }
 
 
 .notification-warning {
     border: 3px solid @warning;
     color: @warning;
-    & .notification-icon {
-        background-color: @warning;
-    }
-    & .notification-close {
-        background-color: @warning;
-    }
+    border-left: 40px solid @warning;
+    border-right: 25px solid @warning;
 }
 
 .notification-danger {
     border: 3px solid @danger;
     color: @danger;
-    & .notification-icon {
-        background-color: @danger;
-    }
-    & .notification-close {
-        background-color: @danger;
-    }
+    border-left: 40px solid @danger;
+    border-right: 25px solid @danger;
 }
 
