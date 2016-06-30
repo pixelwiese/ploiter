@@ -1,6 +1,4 @@
 /*navigation*/
-
-
 .nav {
     width: 100vw;
 }
@@ -47,47 +45,6 @@
 .nav-fixed {
     position: fixed;
 }
-
-
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-decoration: none;
-	color: #fff;
-	background: #19c589;
-	text-align: center;
-	padding: 10px 0;
-	display: none;
-}
-
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-}
-
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ .nav{
-    display: block;
-}
-
-@media screen and (max-width: 760px){
-	.nav-list {
-		position: static;
-	}
-	/*Create vertical spacing*/
-	.nav-item {
-		margin-bottom: 1px;
-	}
-	/*Make all menu links full width*/
-	.nav-item {
-		width: 100%;
-	}
-    
-    .show-menu {
-		display:block;
-	}
-}
-    
 
 
 /*COLORS*/
