@@ -1,11 +1,11 @@
-/*Headings*/
 
+/*General Fonts Style*/
 h1, h2, h3, h4, h5, h6, p, span, nav, button{
     font-family: @font;
     margin-top: 20px;
 }
 
-
+/*Headings*/
 h1, .heading-1 {
    font-size: 3.011em;  
 }
@@ -34,15 +34,18 @@ h6, .heading-6 {
     font-weight: 300;
 }
 
+/*Lead*/
 .lead {
     font-size: 1.338em;
 }
 
+/*Plain Text*/
 p {
     font-size: 1.171em;
     line-height: 1.2;
 }
 
+/*Element specific Typo*/
 button {
     font-size: 1.171em;
 }
@@ -58,11 +61,31 @@ a {
     text-decoration: none;
 }
 
-.text-center {
-    text-align: center;
+
+/*Alignment*/
+.text {
+    &-center {
+        text-align: center;
+    };
+    
+    &-inherit {
+        text-align: inherit;
+    };
+    
+    &-justify {
+        text-align: justify;
+    }
+    
+    &-right {
+        text-align: right;
+    }
+    
+    &-left {
+        text-align: left;
+    }
 }
 
-
+/*Colors*/
 .text-info {
     color: @info;
 }
@@ -80,7 +103,7 @@ a {
 }
 
 hr {
-    border-width: 1.5px;
+    border-top: 2.5px;
     color: #000;
     margin-top: 40px;
     margin-bottom: 40px;
