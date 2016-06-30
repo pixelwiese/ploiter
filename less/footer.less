@@ -9,10 +9,21 @@ footer, .footer, .footer-default {
     float: left;
     & a{
         color: inherit;
-    }
-    
-    
+    };
+    &-info {
+        border-top: 3px solid @info;
+    };
+    &-success { 
+        border-top: 3px solid @success;
+    };
+    &-warning {
+        border-top: 3px solid @warning;
+    };
+    &-danger {
+        border-top: 3px solid @danger;
+    };
 }
+
 .footer-fixed {
     position: fixed;
 }
@@ -23,59 +34,37 @@ footer, .footer, .footer-default {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 500;
+    &-info {
+        color: @info;
+        &-bold {
+            color: @info;
+        }
+    }
+    &-success {
+        color: @success;
+        &-bold {
+            color: @success;
+        }
+    }
     
-    &-bold {
-        margin-top: 15px;
-        margin-right: 70px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        font-weight: 700;
-    };
+    &-warning {
+        color: @warning;
+        &-bold {
+            color: @warning;
+        }
+    }
+    
+    &-danger {
+        color: @danger;
+        &-bold {
+            color: @danger;
+        }
+    }
+    
+    
 }
 
-
-
-/*FOOTER COLORS*/
-/*------------
-INFO
-------------*/
-.footer-info {
-    border-top: 3px solid @info;
-}
-
-.footer-text-info, .footer-text-bold-info {
-    color: @info;
-}
-
-/*------------
-SUCCESS
-------------*/
-.footer-success {
-    border-top: 3px solid @success;
-}
-
-.footer-text-success, .footer-text-bold-success {
-    color: @success;
-}
-
-/*------------
-WARNING
-------------*/
-.footer-warning {
-    border-top: 3px solid @warning;
-}
-
-.footer-text-warning, .footer-text-bold-warning {
-    color: @warning;
-}
-
-/*------------
-DANGER
-------------*/
-.footer-danger {
-    border-top: 3px solid @danger;
-}
-
-.footer-text-danger, .footer-text-bold-danger {
-    color: @danger;
+.footer-text-bold {
+    .footer-text;
+    font-weight: 700;
 }
