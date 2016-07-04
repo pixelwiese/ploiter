@@ -59,10 +59,11 @@ strong {
 
 a {
     text-decoration: none;
+    color: @info;
 }
 
 
-/*Alignment*/
+/*Alignment & colors*/
 .text {
     &-center {
         text-align: center;
@@ -83,23 +84,22 @@ a {
     &-left {
         text-align: left;
     }
-}
-
-/*Colors*/
-.text-info {
-    color: @info;
-}
-
-.text-success {
-    color: @success;
-}
-
-.text-warning {
-    color: @warning;
-}
-
-.text-danger {
-    color: @danger;
+    
+    &-info {
+        color: @info;
+    }
+    
+    &-success {
+        color: @success;
+    }
+    
+    &-warning {
+        color: @warning;
+    }
+    
+    &-danger {
+        color: @danger;
+    }
 }
 
 hr {
