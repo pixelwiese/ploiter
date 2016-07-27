@@ -4,12 +4,8 @@
 STANDARD BUTTON
 ----------------------*/
 button, .btn {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    padding: 10px 15px;
     color: #000;
-    font-family: @font;
     font-weight: 700;
     text-transform: uppercase;
     border-style: solid;
@@ -18,6 +14,7 @@ button, .btn {
     letter-spacing: 0.125em;
     background-color: rgba(0,0,0,0);
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
     & a {
         color: inherit;
     }
@@ -39,10 +36,7 @@ button:hover, .btn:hover {
 
 
 .btn-small {
-    padding-top: 6px;
-    padding-right: 10px;
-    padding-bottom: 6px;
-    padding-left: 10px;
+    padding: 6px 10px;
     font-size: 80%;
 }
 
